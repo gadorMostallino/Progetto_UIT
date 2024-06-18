@@ -9,7 +9,7 @@ public class Soap_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Soap script started");
+        
     }
 
     // Update is called once per frame
@@ -34,5 +34,13 @@ public class Soap_script : MonoBehaviour
             particle.Stop();
         }
         
+        
+        
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        var script_man = other.gameObject.GetComponent<script_man>();
+        script_man.stato = "lavaggioEseguito";
     }
 }
