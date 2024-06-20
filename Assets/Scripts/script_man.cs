@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class script_man : MonoBehaviour
 {
-    public string stato = "avvio";
+    public string state = "start";
     // Start is called before the first frame update
     void Start()
     {
