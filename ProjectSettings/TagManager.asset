@@ -13,6 +13,7 @@ TagManager:
   - BendageRoll
   - Box1
   - Box2
+  - DogVase
   layers:
   - Default
   - TransparentFX

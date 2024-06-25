@@ -30,11 +30,11 @@ public class Knife_script : MonoBehaviour
             box2.SetActive(true);
 
         }
-        if (other.gameObject.CompareTag("Box2") && flag)
+        if (other.gameObject.CompareTag("Box2"))
         {
             humanOrgans.SetActive(true);
         }
-        
+    
     }
     
     
