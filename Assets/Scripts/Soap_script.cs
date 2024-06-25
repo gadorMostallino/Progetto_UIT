@@ -41,7 +41,7 @@ public class Soap_script : MonoBehaviour
     private void OnCollisionExit(Collision other)
     {
         var script_man = other.gameObject.GetComponent<script_man>();
-        script_man.state = "washDone";
+        //script_man.state = "washDone";
         //gameObject.GetComponent<ObjectManipulator>().enabled = false;
     }
 }

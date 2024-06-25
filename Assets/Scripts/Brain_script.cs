@@ -26,7 +26,7 @@ public class Brain_script : MonoBehaviour
         {
             //Destroy(this.gameObject);
             //Fissare posizione del cervello all'interno del cesto
-            this.transform.position = new Vector3((float)2.11599994, (float)0.217999995, (float)1.46599996);
+            this.transform.position = new Vector3((float)-0.839999974, (float)0.143999994, (float)1.78400004);
             gameObject.GetComponent<ObjectManipulator>().enabled = false;
         }
     }
