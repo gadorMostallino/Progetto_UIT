@@ -24,9 +24,8 @@ public class Brain_script : MonoBehaviour
         Debug.Log("Entered collision with " + other.gameObject.name);
         if (other.gameObject.CompareTag("Bucket"))
         {
-            //Destroy(this.gameObject);
-            //Fissare posizione del cervello all'interno del cesto
-            this.transform.position = new Vector3((float)-0.839999974, (float)0.143999994, (float)1.78400004);
+            //Fix position inside the bucket once the interaction is done and disable the object manipulator.
+            this.transform.position = new Vector3((float)-0.801, (float)0.143999994, (float)1.78400004);
             gameObject.GetComponent<ObjectManipulator>().enabled = false;
         }
     }
