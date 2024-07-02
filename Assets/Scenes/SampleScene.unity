@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17279449, g: 0.21592733, b: 0.29786652, a: 1}
+  m_IndirectSpecularColor: {r: 0.1727943, g: 0.21592703, b: 0.29786628, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -682,7 +682,31 @@ MonoBehaviour:
       m_Calls: []
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1819750229}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 520229339}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -1321,11 +1345,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc66f061e2764324d88cd03d69721132, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cube1: {fileID: 42536646}
   cube2: {fileID: 307179106}
   cube3: {fileID: 1902586274}
   cube4: {fileID: 1227510473}
   cube5: {fileID: 557202457}
+  mummy: {fileID: 562334151}
 --- !u!65 &477626650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2114,7 +2138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &520229340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2397,6 +2421,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557202457}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &562334151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
+  m_PrefabInstance: {fileID: 583240046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &571280594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2569,11 +2598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.564
+      value: 0.57766604
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.534
+      value: 0.561
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2581,31 +2610,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70679307
+      value: 0.70382863
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.65003264
+      value: -0.6530645
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.20459262
+      value: 0.19469775
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.18985018
+      value: 0.20056146
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -85.247
+      value: -85.858
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 30.769
+      value: 9.652
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 1.65
+      value: 22.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -2614,6 +2643,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
       propertyPath: m_Name
       value: mummia
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7da4d411f55275f49aee4537f2e877a5, type: 3}
+      propertyPath: m_TagString
+      value: Mummia
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10164,7 +10201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1482017382
 Transform:
   m_ObjectHideFlags: 0
@@ -10763,7 +10800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1819750230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11896,7 +11933,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &1028526692815027066
 MeshFilter:
   m_ObjectHideFlags: 0

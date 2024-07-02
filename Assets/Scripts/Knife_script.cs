@@ -33,6 +33,7 @@ public class Knife_script : MonoBehaviour
         if (other.gameObject.CompareTag("Box2"))
         {
             humanOrgans.SetActive(true);
+            GameObject.Find("Step3").SetActive(false);
         }
     
     }

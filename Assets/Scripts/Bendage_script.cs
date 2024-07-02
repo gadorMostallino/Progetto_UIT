@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Bendage_script : MonoBehaviour
 {
-    public GameObject cube1, cube2, cube3, cube4, cube5;
+    public GameObject cube2, cube3, cube4, cube5;
+    public GameObject mummy;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,9 @@ public class Bendage_script : MonoBehaviour
         if (other.gameObject.CompareTag("Cube5"))
         {
             GameObject.Find("Step4").SetActive(false);
+            GameObject.Find("Man").SetActive(false);
+            mummy.SetActive(true);
+            
         }
 
     }
