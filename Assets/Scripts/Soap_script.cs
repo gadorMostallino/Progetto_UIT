@@ -17,7 +17,7 @@ public class Soap_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var script_man = man.gameObject.GetComponent<script_man>();
+        var script_man = man.gameObject.GetComponent<Man_script>();
         if (script_man.state == "start") 
         {
             gameObject.GetComponent<ObjectManipulator>().enabled = true;
@@ -48,10 +48,5 @@ public class Soap_script : MonoBehaviour
         
     }
 
-    private void OnCollisionExit(Collision other)
-    {
-        var script_man = other.gameObject.GetComponent<script_man>();
-        //script_man.state = "washDone";
-        //gameObject.GetComponent<ObjectManipulator>().enabled = false;
-    }
+    
 }
