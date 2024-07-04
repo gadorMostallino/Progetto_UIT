@@ -44,7 +44,7 @@ public class Bendage_script : MonoBehaviour
             GameObject.Find("Step4").SetActive(false);
             GameObject.Find("Man").SetActive(false);
             mummy.SetActive(true);
-            
+            Man_script.ChangeState(Man_script.States.bendageDone);
         }
 
     }

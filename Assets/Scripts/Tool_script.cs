@@ -11,13 +11,13 @@ public class Tool_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var script_man = man.gameObject.GetComponent<Man_script>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnCollisionEnter(Collision other)
