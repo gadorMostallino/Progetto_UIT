@@ -8,17 +8,16 @@ using UnityEngine.UI;
 public class Soap_script : MonoBehaviour
 {
     public GameObject man;
-
     public Image progressBar;
-    private float scaleIncrement = 0.1f;
+    private float scaleIncrement = 0.05f;
     private float maxScale = 0.4089463f;
   
 
     // Start is called before the first frame update
     void Start()
     {
-        var script_man = man.gameObject.GetComponent<Man_script>();
-        if (script_man.state == "start") 
+        var Man_script = man.gameObject.GetComponent<Man_script>();
+        if (Man_script.state == "start") 
         {
             gameObject.GetComponent<ObjectManipulator>().enabled = true;
         }
@@ -36,6 +35,7 @@ public class Soap_script : MonoBehaviour
         var particle = GetComponent<ParticleSystem>();
         if (other.gameObject.CompareTag("Man"))
         {
+    
             particle.Play();
             //Mathf.Clamp è una funzione di Unity che limita un valore all'interno di un intervallo specificato. Prende tre argomenti: il valore da limitare, il valore minimo e il valore massimo.
             float newScaleX = Mathf.Clamp(progressBar.rectTransform.localScale.x + scaleIncrement, 0, maxScale);
@@ -48,5 +48,10 @@ public class Soap_script : MonoBehaviour
         
     }
 
-    
+    private void OnCollisionExit(Collision other)
+    {
+        var Man_script = other.gameObject.GetComponent<Man_script>();
+        //script_man.state = "washDone";
+        //gameObject.GetComponent<ObjectManipulator>().enabled = false;
+    }
 }

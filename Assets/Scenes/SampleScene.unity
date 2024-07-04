@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1727943, g: 0.21592703, b: 0.29786628, a: 1}
+  m_IndirectSpecularColor: {r: 0.17279449, g: 0.21592733, b: 0.29786652, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3890,9 +3890,6 @@ PrefabInstance:
       addedObject: {fileID: 1072559899}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da56ff92e8fd07e43a067f54902b07c9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1072559903}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da56ff92e8fd07e43a067f54902b07c9, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1072559907}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da56ff92e8fd07e43a067f54902b07c9, type: 3}
       insertIndex: -1
@@ -3900,6 +3897,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da56ff92e8fd07e43a067f54902b07c9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1072559908}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da56ff92e8fd07e43a067f54902b07c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1072559911}
   m_SourcePrefab: {fileID: 100100000, guid: da56ff92e8fd07e43a067f54902b07c9, type: 3}
 --- !u!1 &1072559898 stripped
 GameObject:
@@ -3950,7 +3950,19 @@ MonoBehaviour:
       m_Calls: []
   m_FirstSelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1392895603}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_LastSelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -4188,20 +4200,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da56ff92e8fd07e43a067f54902b07c9, type: 3}
   m_PrefabInstance: {fileID: 1072559897}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1072559903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072559898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4839941289cf484497d0cdc591fc32a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  man: {fileID: 1488149704}
-  progressBar: {fileID: 1192953751}
 --- !u!199 &1072559906
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -9026,6 +9024,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1072559911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072559898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4839941289cf484497d0cdc591fc32a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  man: {fileID: 1488149704}
+  progressBar: {fileID: 1192953751}
 --- !u!1001 &1131651149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10057,7 +10069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1392895604
 RectTransform:
   m_ObjectHideFlags: 0
