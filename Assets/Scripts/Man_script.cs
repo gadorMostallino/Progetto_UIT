@@ -32,6 +32,5 @@ public class Man_script : MonoBehaviour
     public static void ChangeState(States newState)
     {
         currentState = newState;
-        Debug.Log(currentState);
     }
 }

@@ -29,6 +29,7 @@ public class Brain_script : MonoBehaviour
             Man_script.ChangeState(Man_script.States.brainExtraction);
             gameObject.GetComponent<ObjectManipulator>().enabled = false;
             GameObject.Find("StoneKnife").GetComponent<ObjectManipulator>().enabled = true;
+            
         }
     }
     

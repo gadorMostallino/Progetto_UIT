@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MixedReality.Toolkit.SpatialManipulation;
+using MixedReality.Toolkit.UX;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,8 +12,10 @@ public class Soap_script : MonoBehaviour
 {
     public GameObject man;
     public Image progressBar;
+    public Dialog dialog;
     private float scaleIncrement = 0.15f; //da rimettere a 0.05f
     private float maxScale = 0.4089463f;
+    
   
 
     // Start is called before the first frame update
@@ -49,6 +52,8 @@ public class Soap_script : MonoBehaviour
                     await Task.Delay(2500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
                     GameObject.Find("Tool").GetComponent<ObjectManipulator>().enabled = true;
+                    GameObject.Find("DialogStep1").SetActive(false);
+                    dialog.gameObject.SetActive(true);
                 }
             }
         }
