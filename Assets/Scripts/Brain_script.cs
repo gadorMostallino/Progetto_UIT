@@ -7,6 +7,7 @@ using UnityEngine;
 public class Brain_script : MonoBehaviour
 {
     public GameObject bucket;
+    public GameObject dialog;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,8 @@ public class Brain_script : MonoBehaviour
             Man_script.ChangeState(Man_script.States.brainExtraction);
             gameObject.GetComponent<ObjectManipulator>().enabled = false;
             GameObject.Find("StoneKnife").GetComponent<ObjectManipulator>().enabled = true;
+            dialog.gameObject.SetActive(true);
+            GameObject.Find("Step2").SetActive(false);
             
         }
     }

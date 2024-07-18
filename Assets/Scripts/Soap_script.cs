@@ -12,7 +12,7 @@ public class Soap_script : MonoBehaviour
 {
     public GameObject man;
     public Image progressBar;
-    public Dialog dialog;
+    public GameObject dialog;
     private float scaleIncrement = 0.15f; //da rimettere a 0.05f
     private float maxScale = 0.4089463f;
     
@@ -52,7 +52,7 @@ public class Soap_script : MonoBehaviour
                     await Task.Delay(2500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
                     GameObject.Find("Tool").GetComponent<ObjectManipulator>().enabled = true;
-                    GameObject.Find("DialogStep1").SetActive(false);
+                    GameObject.Find("Step1").SetActive(false);
                     dialog.gameObject.SetActive(true);
                 }
             }
