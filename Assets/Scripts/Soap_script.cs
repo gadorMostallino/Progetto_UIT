@@ -15,8 +15,8 @@ public class Soap_script : MonoBehaviour
     public GameObject dialog;
     private float scaleIncrement = 0.15f; //da rimettere a 0.05f
     private float maxScale = 0.4089463f;
-    
-  
+
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,11 @@ public class Soap_script : MonoBehaviour
         {
             gameObject.GetComponent<ObjectManipulator>().enabled = true;
         }
+        
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        
+
+
     }
 
     // Update is called once per frame
@@ -52,8 +57,9 @@ public class Soap_script : MonoBehaviour
                     await Task.Delay(2500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
                     GameObject.Find("Tool").GetComponent<ObjectManipulator>().enabled = true;
-                    GameObject.Find("Step1").SetActive(false);
-                    dialog.gameObject.SetActive(true);
+                    //GameObject.Find("Step1").SetActive(false);
+                    //dialog.gameObject.SetActive(true);
+                    gameManager.NextPanel(1);
                 }
             }
         }

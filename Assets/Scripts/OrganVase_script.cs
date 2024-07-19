@@ -33,6 +33,8 @@ public class OrganVase_script : MonoBehaviour
                 Debug.Log(Man_script.currentState.ToString());
                 Man_script.ChangeState(Man_script.States.vasesClosed);
                 GameObject.Find("BendageRoll").GetComponent<ObjectManipulator>().enabled = true;
+                GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+                gameManager.NextPanel(6);
             }
         }
 

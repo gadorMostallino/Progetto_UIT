@@ -17,9 +17,7 @@ public class Man_script : MonoBehaviour
     public static States currentState;
     public string state;
 
-    public List <GameObject> panels;
-    
-    
+
     // Start is called before the first frame update
     void Start()
     {

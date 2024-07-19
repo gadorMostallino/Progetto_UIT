@@ -41,10 +41,12 @@ public class Bendage_script : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Cube5"))
         {
-            GameObject.Find("Step4").SetActive(false);
+            GameObject.Find("Step4Cubes").SetActive(false);
             GameObject.Find("Man").SetActive(false);
             mummy.SetActive(true);
             Man_script.ChangeState(Man_script.States.bendageDone);
+            GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            gameManager.NextPanel(8);
         }
 
     }

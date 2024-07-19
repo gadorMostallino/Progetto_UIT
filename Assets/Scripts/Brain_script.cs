@@ -30,8 +30,10 @@ public class Brain_script : MonoBehaviour
             Man_script.ChangeState(Man_script.States.brainExtraction);
             gameObject.GetComponent<ObjectManipulator>().enabled = false;
             GameObject.Find("StoneKnife").GetComponent<ObjectManipulator>().enabled = true;
-            dialog.gameObject.SetActive(true);
-            GameObject.Find("Step2").SetActive(false);
+            //dialog.gameObject.SetActive(true);
+            //GameObject.Find("Step2").SetActive(false);
+            GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            gameManager.NextPanel(3);
             
         }
     }
