@@ -9,6 +9,8 @@ public class Knife_script : MonoBehaviour
 {
     public  GameObject box1, box2;
     public GameObject humanOrgans;
+
+    public Material red;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +25,10 @@ public class Knife_script : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        bool flag = false;
         if (other.gameObject.CompareTag("Box1"))
         {
-            flag = true;
             box2.SetActive(true);
+            box1.GetComponent<Renderer>().material = red;
 
         }
         if (other.gameObject.CompareTag("Box2"))

@@ -26,11 +26,9 @@ public class OrganVase_script : MonoBehaviour
         {
             Destroy(gameObject);
             count++;
-            Debug.Log(count);
             topVase.transform.localPosition = new Vector3(0, 0, 0);
             if (count == 4)
             {
-                Debug.Log(Man_script.currentState.ToString());
                 Man_script.ChangeState(Man_script.States.vasesClosed);
                 GameObject.Find("BendageRoll").GetComponent<ObjectManipulator>().enabled = true;
                 GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();

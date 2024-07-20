@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class Bendage_script : MonoBehaviour
 {
-    public GameObject cube2, cube3, cube4, cube5;
+    public GameObject cube1, cube2, cube3, cube4, cube5;
     public GameObject mummy;
+    public Material red;
     
     // Start is called before the first frame update
     void Start()
@@ -24,19 +25,24 @@ public class Bendage_script : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Cube1"))
         {
+            //cube change color to red when collision happens
+            cube1.GetComponent<Renderer>().material = red;
             cube2.SetActive(true);
 
         }
         if (other.gameObject.CompareTag("Cube2"))
         {
+            cube2.GetComponent<Renderer>().material = red;
             cube3.SetActive(true);
         }
         if (other.gameObject.CompareTag("Cube3"))
         {
+            cube3.GetComponent<Renderer>().material = red;
             cube4.SetActive(true);
         }
         if (other.gameObject.CompareTag("Cube4"))
         {
+            cube4.GetComponent<Renderer>().material = red;
             cube5.SetActive(true);
         }
         if (other.gameObject.CompareTag("Cube5"))

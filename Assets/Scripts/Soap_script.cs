@@ -40,7 +40,6 @@ public class Soap_script : MonoBehaviour
     
     async void OnCollisionEnter(Collision other)
     {
-        //Debug.Log("Entered collision with " + other.gameObject.name);
         var particle = GetComponent<ParticleSystem>();
         if (other.gameObject.CompareTag("Man"))
         {
@@ -57,8 +56,6 @@ public class Soap_script : MonoBehaviour
                     await Task.Delay(2500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
                     GameObject.Find("Tool").GetComponent<ObjectManipulator>().enabled = true;
-                    //GameObject.Find("Step1").SetActive(false);
-                    //dialog.gameObject.SetActive(true);
                     gameManager.NextPanel(1);
                 }
             }

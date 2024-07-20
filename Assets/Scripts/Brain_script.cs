@@ -22,7 +22,6 @@ public class Brain_script : MonoBehaviour
     
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Entered collision with " + other.gameObject.name);
         if (other.gameObject.CompareTag("Bucket"))
         {
             //Fix position inside the bucket once the interaction is done and disable the object manipulator.
@@ -30,8 +29,6 @@ public class Brain_script : MonoBehaviour
             Man_script.ChangeState(Man_script.States.brainExtraction);
             gameObject.GetComponent<ObjectManipulator>().enabled = false;
             GameObject.Find("StoneKnife").GetComponent<ObjectManipulator>().enabled = true;
-            //dialog.gameObject.SetActive(true);
-            //GameObject.Find("Step2").SetActive(false);
             GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             gameManager.NextPanel(3);
             

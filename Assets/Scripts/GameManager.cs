@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public List <GameObject> panels;
     private int index = 0;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,5 +24,4 @@ public class GameManager : MonoBehaviour
         panels[index-1].SetActive(false);
         panels[index].SetActive(true);
     }
-    
 }

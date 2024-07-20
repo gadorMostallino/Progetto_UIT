@@ -26,13 +26,11 @@ public class TeleportationManager_script : MonoBehaviour
     public void TeleportPlayer( )
     {
         XRrig.transform.localPosition = new Vector3((float)0.61, (float)0, (float)-20.33);
-        Debug.Log("teletrasporto");
     }
 
     public void IngressoSala()
     {
         XRrig.transform.localPosition = new Vector3((float)0.61, (float)0.2, (float)1);
-        Debug.Log("teletrasporto");
 
     }
 
