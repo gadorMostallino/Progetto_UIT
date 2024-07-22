@@ -8531,7 +8531,7 @@ MonoBehaviour:
   <OnDisabled>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  hostTransform: {fileID: 0}
+  hostTransform: {fileID: 840208658}
   allowedManipulations: 7
   allowedInteractionTypes: -2147483641
   rigidbodyMovementType: 0
@@ -8615,7 +8615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vase: {fileID: 199102060}
   topVase: {fileID: 199102064}
-  audioClip: {fileID: 8300000, guid: 5a787f1f146d3bd4eb8bc049873c1a1a, type: 3}
+  audioClip: {fileID: 8300000, guid: 81dbf187a0a76cc4189baa1b532b7ef0, type: 3}
 --- !u!1 &1044288602
 GameObject:
   m_ObjectHideFlags: 0
@@ -15552,7 +15552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vase: {fileID: 571280595}
   topVase: {fileID: 571280599}
-  audioClip: {fileID: 8300000, guid: 5a787f1f146d3bd4eb8bc049873c1a1a, type: 3}
+  audioClip: {fileID: 8300000, guid: b5dd39efad855ab4692ac1f977ffe7e3, type: 3}
 --- !u!1 &1261178075
 GameObject:
   m_ObjectHideFlags: 0
@@ -15631,7 +15631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nel prossimo passo dovrai impugnare il coltello e effettuare un incisione
+  m_text: "Nel prossimo passo dovrai impugnare il coltello ed effettuare un' incisione
     nel torace del faraone. \nSegui i cubetti verdi e non potrai sbagliare! \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16258,7 +16258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A questo punto, si pu\xF2 procedere con l'ultima fase della mummificazione:
+  m_text: "A questo punto si pu\xF2 procedere con l'ultima fase della mummificazione:
     il bendaggio. I sacerdoti avvolgevano con molta attenzione il corpo con delle
     bende di lino impregnate di resina."
   m_isRightToLeft: 0
@@ -18149,9 +18149,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4077621537964744323, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
+      propertyPath: m_Value
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121633704461980208, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2028302
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121633704461980208, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78789324
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121633704461980208, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746343293682843979, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5746343293682843979, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9026188848678526309, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
       propertyPath: m_Name
@@ -18159,7 +18179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9026188848678526309, guid: 484f9d97b5f91ee4cafe787bc0ba9dc4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18987,7 +19007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vase: {fileID: 1357769599}
   topVase: {fileID: 1357769603}
-  audioClip: {fileID: 8300000, guid: 5a787f1f146d3bd4eb8bc049873c1a1a, type: 3}
+  audioClip: {fileID: 8300000, guid: 5086fb5181d2c614e96fbacea9f09cac, type: 3}
 --- !u!1001 &1733897049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19507,8 +19527,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ora tocca a te! Prendi il rotolo di bende sul tavolo e inivia ad avvolgere
-    il corpo seguendo i cubetti verdi.
+  m_text: Ora prendi il rotolo di bende dal tavolo e inizia ad avvolgere il corpo
+    seguendo i cubetti verdi.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20582,7 +20602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vase: {fileID: 362229311}
   topVase: {fileID: 1591802350}
-  audioClip: {fileID: 8300000, guid: 5a787f1f146d3bd4eb8bc049873c1a1a, type: 3}
+  audioClip: {fileID: 8300000, guid: e451c4386a82a904ba8a9e3ccc2d4698, type: 3}
 --- !u!65 &1841427016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21432,7 +21452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bravo! Hai quasi concluso...manca solo un'ultimo step
+  m_text: Bravo! Hai quasi concluso... manca solo un ultimo step
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
