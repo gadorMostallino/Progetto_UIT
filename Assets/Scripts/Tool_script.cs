@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using MixedReality.Toolkit.SpatialManipulation;
 using UnityEngine;
+using System.Threading.Tasks;
 
-public class Tool_script : MonoBehaviour
+public class Hook_script : MonoBehaviour
 {
     public GameObject brain;
-    public GameObject man;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class Tool_script : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision other)
+    async void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Nose"))
         {
@@ -29,9 +30,4 @@ public class Tool_script : MonoBehaviour
         
     }
     
-    private void OnCollisionExit(Collision other)
-    {
-        //var script_man = other.gameObject.GetComponent<script_man>();
-        //script_man.state = "brainGone";
-    }
 }

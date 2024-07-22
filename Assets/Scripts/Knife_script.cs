@@ -37,6 +37,7 @@ public class Knife_script : MonoBehaviour
             GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             GameObject.Find("Step3Cubes").SetActive(false);
             gameManager.NextPanel(5);
+            GameManager.SetPositionTools(this.gameObject);
         }
     
     }

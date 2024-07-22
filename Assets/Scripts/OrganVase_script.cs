@@ -8,6 +8,8 @@ public class OrganVase_script : MonoBehaviour
     public GameObject vase;
     public GameObject topVase;
     public static int count;
+    
+    public AudioClip audioClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,9 @@ public class OrganVase_script : MonoBehaviour
         {
             Destroy(gameObject);
             count++;
-            topVase.transform.localPosition = new Vector3(0, 0, 0);
+            topVase.transform.localPosition = new Vector3(0, 0, 0); 
+            //play the audioclip
+            AudioSource.PlayClipAtPoint(audioClip, transform.position);
             if (count == 4)
             {
                 Man_script.ChangeState(Man_script.States.vasesClosed);

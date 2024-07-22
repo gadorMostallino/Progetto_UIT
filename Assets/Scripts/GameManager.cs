@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using MixedReality.Toolkit.SpatialManipulation;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -23,5 +25,30 @@ public class GameManager : MonoBehaviour
     {
         panels[index-1].SetActive(false);
         panels[index].SetActive(true);
+    }
+
+    //Funzione che si occupa di riposizionare gli strumenti dopo che sono stati utilizzati, nella posizione iniziale.
+    // Inoltre, viene disattivato l'object manipulator. 
+    public static void SetPositionTools(GameObject tool)
+    {
+        switch (tool.name)
+        {
+            case "Soap":
+                tool.transform.localPosition = new Vector3((float)-2.07474256, (float)-0.3807652, (float)-1.93799996);
+                tool.GetComponent<ObjectManipulator>().enabled = false;
+                break;
+            case "Hook":
+                tool.transform.localPosition = new Vector3((float)-1.4787426,(float)-1.49876511,(float)-1.551); 
+                tool.GetComponent<ObjectManipulator>().enabled = false;
+                break;
+            case "StoneKnife":
+                tool.transform.localPosition = new Vector3((float)-1.99600005,(float)-0.148000002,(float)-1.25800002); 
+                tool.GetComponent<ObjectManipulator>().enabled = false;
+                break;
+            case "BendageRoll":
+                tool.transform.localPosition = new Vector3((float)-2.07775164,(float)-0.333765149,(float)-0.987349868); 
+                tool.GetComponent<ObjectManipulator>().enabled = false;
+                break;
+        }
     }
 }

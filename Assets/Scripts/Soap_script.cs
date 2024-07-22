@@ -55,7 +55,7 @@ public class Soap_script : MonoBehaviour
                     Man_script.ChangeState(Man_script.States.washed);
                     await Task.Delay(2500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
-                    GameObject.Find("Tool").GetComponent<ObjectManipulator>().enabled = true;
+                    GameObject.Find("Hook").GetComponent<ObjectManipulator>().enabled = true;
                     gameManager.NextPanel(1);
                 }
             }
@@ -66,9 +66,5 @@ public class Soap_script : MonoBehaviour
         }
         
     }
-
-    private void OnCollisionExit(Collision other)
-    {
-        
-    }
+    
 }
