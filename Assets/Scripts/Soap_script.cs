@@ -11,24 +11,21 @@ using UnityEngine.UI;
 public class Soap_script : MonoBehaviour
 {
     public GameObject man;
-    public Image progressBar;
-    public GameObject dialog;
-    private float scaleIncrement = 0.15f; //da rimettere a 0.05f
-    private float maxScale = 0.4089463f;
-
+    public UnityEngine.UI.Slider progressBar;
+    private float scaleIncrement = 0.05f; //da rimettere a 0.05f    
     private GameManager gameManager;
-
+//ciao
     // Start is called before the first frame update
     void Start()
     {
+       
         if (Man_script.currentState.Equals(Man_script.States.start)) 
         {
             gameObject.GetComponent<ObjectManipulator>().enabled = true;
         }
         
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        
-
+    
 
     }
 
@@ -44,16 +41,17 @@ public class Soap_script : MonoBehaviour
         if (other.gameObject.CompareTag("Man"))
         {
             particle.Play();
-            if (GameObject.Find("CanvasProgressBar") != null)
+
+            if (GameObject.Find("ProgressBar") != null)
             {
-                //Mathf.Clamp è una funzione di Unity che limita un valore all'interno di un intervallo specificato. Prende tre argomenti: il valore da limitare, il valore minimo e il valore massimo.
-                float newScaleX = Mathf.Clamp(progressBar.rectTransform.localScale.x + scaleIncrement, 0, maxScale);
-                progressBar.rectTransform.localScale = new Vector3(newScaleX, progressBar.rectTransform.localScale.y,
-                    progressBar.rectTransform.localScale.z);
-                if (newScaleX.Equals(maxScale))
+
+                if (other.gameObject.CompareTag("Man")){
+                    progressBar.value = progressBar.value + scaleIncrement;
+
+                if (progressBar.value.Equals(1))
                 {
                     Man_script.ChangeState(Man_script.States.washed);
-                    await Task.Delay(2500);
+                    await Task.Delay(500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
                     GameObject.Find("Hook").GetComponent<ObjectManipulator>().enabled = true;
                     gameManager.NextPanel(1);
@@ -66,5 +64,13 @@ public class Soap_script : MonoBehaviour
         }
         
     }
+    }
+
+
+    private void OnCollisionExit(Collision other)
+    {
+        
+    }
     
+
 }
