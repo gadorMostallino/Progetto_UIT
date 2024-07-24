@@ -23,15 +23,14 @@ public class TeleportationManager_script : MonoBehaviour
 
 
     // Teleportation function
-    public void TeleportPlayer( )
+    public void TeleportPlayer()
     {
         XRrig.transform.localPosition = new Vector3((float)0.61, (float)0, (float)-20.33);
     }
 
     public void IngressoSala()
     {
-        XRrig.transform.localPosition = new Vector3((float)0.61, (float)0.2, (float)1);
-
+        XRrig.transform.localPosition = new Vector3((float)0.61, (float)0.2, (float)-0.032);
     }
 
 

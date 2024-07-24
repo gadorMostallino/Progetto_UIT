@@ -35,18 +35,22 @@ public class GameManager : MonoBehaviour
         {
             case "Soap":
                 tool.transform.localPosition = new Vector3((float)-2.07474256, (float)-0.3807652, (float)-1.93799996);
+                tool.transform.rotation = Quaternion.Euler((float)-90, (float)0, (float)0);
                 tool.GetComponent<ObjectManipulator>().enabled = false;
                 break;
             case "Hook":
                 tool.transform.localPosition = new Vector3((float)-1.4787426,(float)-1.49876511,(float)-1.551); 
+                tool.transform.rotation = Quaternion.Euler((float)-180, (float)0, (float)0);
                 tool.GetComponent<ObjectManipulator>().enabled = false;
                 break;
             case "StoneKnife":
-                tool.transform.localPosition = new Vector3((float)-1.99600005,(float)-0.148000002,(float)-1.25800002); 
+                tool.transform.localPosition = new Vector3((float)-1.99549997,(float)-0.331099987,(float)-1.31550002); 
+                tool.transform.rotation = Quaternion.Euler((float)-180, (float)180, (float)-90);
                 tool.GetComponent<ObjectManipulator>().enabled = false;
                 break;
             case "BendageRoll":
-                tool.transform.localPosition = new Vector3((float)-2.07775164,(float)-0.333765149,(float)-0.987349868); 
+                tool.transform.localPosition = new Vector3((float)-2.07775164,(float)-0.333765149,(float)-0.987349868);
+                tool.transform.rotation = Quaternion.Euler((float)0, (float)90, (float)0);
                 tool.GetComponent<ObjectManipulator>().enabled = false;
                 break;
         }
