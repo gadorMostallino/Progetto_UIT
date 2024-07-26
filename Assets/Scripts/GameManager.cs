@@ -8,11 +8,22 @@ public class GameManager : MonoBehaviour
 {
     public List <GameObject> panels;
     private int index = 0;
+    public GameObject XRrig;
+
+    private Vector3 initialPosition = new Vector3((float)0.439999998, 0, (float)-35.4000015);
+    private Vector3 salaImbalsamazione = new Vector3((float)0.610000014, (float)0.200000003, (float)-0.0320000015);
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (XRrig != null)
+        {
+            XRrig.transform.localPosition = salaImbalsamazione;
+        }
+        else
+        {
+            Debug.Log("XR rig not found!");
+        }
     }
 
     // Update is called once per frame
