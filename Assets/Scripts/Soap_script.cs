@@ -55,6 +55,7 @@ public class Soap_script : MonoBehaviour
                     Destroy(GameObject.Find("CanvasProgressBar"));
                     GameObject.Find("Hook").GetComponent<ObjectManipulator>().enabled = true;
                     gameManager.NextPanel(1);
+                    particle.Stop();
                 }
             }
         }

@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Bendage_script : MonoBehaviour
 {
     public GameObject cube1, cube2, cube3, cube4, cube5;
     public GameObject mummy;
+    public GameObject sarcofago;
     public Material red;
     
     // Start is called before the first frame update
@@ -50,6 +52,9 @@ public class Bendage_script : MonoBehaviour
             GameObject.Find("Step4Cubes").SetActive(false);
             GameObject.Find("Man").SetActive(false);
             mummy.SetActive(true);
+            GameObject.Find("Tools").SetActive(false);
+            GameObject.Find("Table").SetActive(false);
+            sarcofago.SetActive(true);
             Man_script.ChangeState(Man_script.States.bendageDone);
             GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             gameManager.NextPanel(8);
