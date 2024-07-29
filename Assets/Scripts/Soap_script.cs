@@ -12,7 +12,7 @@ public class Soap_script : MonoBehaviour
 {
     public GameObject man;
     public UnityEngine.UI.Slider progressBar;
-    private float scaleIncrement = 0.05f; //da rimettere a 0.05f    
+    private float scaleIncrement = 0.15f;   
     private GameManager gameManager;
 //ciao
     // Start is called before the first frame update
