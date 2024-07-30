@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     private int index = 0;
     public GameObject XRrig;
 
-    private Vector3 initialPosition = new Vector3((float)0.439999998, 0, (float)-35.4000015);
+
+    private Vector3 initialPosition = new Vector3((float)0.384026587, 0, (float)-35.4000015);
     private Vector3 salaImbalsamazione = new Vector3((float)0.610000014, (float)0.200000003, (float)-0.0320000015);
 
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     {
         if (XRrig != null)
         {
-            XRrig.transform.localPosition = salaImbalsamazione;
+            XRrig.transform.localPosition = initialPosition;
         }
         else
         {
