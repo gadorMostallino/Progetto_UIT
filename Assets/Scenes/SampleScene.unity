@@ -1879,11 +1879,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8376646494505211229, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 112.975
+      value: 112.96
       objectReference: {fileID: 0}
     - target: {fileID: 8376646494505211229, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -52.170723
+      value: -60.78572
       objectReference: {fileID: 0}
     - target: {fileID: 8376646494505211229, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2074,11 +2074,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0504887
+      value: -2.062
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23156929
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2086,7 +2086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.00968547
+      value: 0.7550864
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2098,7 +2098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.99995315
+      value: 0.6556253
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2110,7 +2110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.1099854
+      value: -98.06601
       objectReference: {fileID: 0}
     - target: {fileID: -302736238102332845, guid: 44f18b15136b95149b774b3ccef73d4a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3591,11 +3591,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4339,7 +4339,7 @@ RectTransform:
   m_GameObject: {fileID: 422999531}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.000029802322}
-  m_LocalScale: {x: 1.2043, y: 1.6419, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1248041610}
@@ -4348,8 +4348,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15.27, y: 25.12}
-  m_SizeDelta: {x: 225.95, y: 88.36}
+  m_AnchoredPosition: {x: 15.25, y: 33.73}
+  m_SizeDelta: {x: 225.92, y: 105.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422999533
 MonoBehaviour:
@@ -4523,8 +4523,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dopo aver posizionato le bende su tutto il corpo, il corpo veniva inserito
-    con molta delicatezza all'interno di vari sarcofagi
+  m_text: Dopo aver posizionato le bende, il corpo veniva inserito con molta delicatezza
+    all'interno del sarcofago
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15673,7 +15673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1174946138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16113,14 +16113,14 @@ RectTransform:
   m_GameObject: {fileID: 1248041609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.19937205}
-  m_LocalScale: {x: 0.91161, y: 0.91161, z: 0.91161}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 422999532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110.64176, y: -135.38033}
+  m_AnchoredPosition: {x: 110.62676, y: -135.38033}
   m_SizeDelta: {x: 210.43, y: 46.33}
   m_Pivot: {x: 0.48891205, y: -1.7062448}
 --- !u!114 &1248041611
@@ -16227,7 +16227,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 20, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -17026,11 +17026,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_SizeDelta.x
@@ -18665,9 +18665,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 775383927}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110.81, y: -79.35489}
   m_SizeDelta: {x: 204.58, y: -2.05}
   m_Pivot: {x: 0.5, y: 0.19750811}
 --- !u!114 &1439053056
@@ -18711,7 +18711,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Ottimo lavoro!\nGrazie al tuo aiuto il faraone pu\xF2 finalmente iniziare
-    il suo viaggio nell'Aldil\xE0. "
+    il suo viaggio nell'Aldil\xE0!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19720,11 +19720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5319578128471115350, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
       propertyPath: m_SizeDelta.x
@@ -24631,8 +24631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Grandioso! \nHai inserito correttamente tutti gli organi nei vasi. Premi
-    avanti per continuare."
+  m_text: "Grandioso! \nHai inserito correttamente tutti gli organi nei vasi!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
