@@ -12,9 +12,10 @@ public class Soap_script : MonoBehaviour
 {
     public GameObject man;
     public UnityEngine.UI.Slider progressBar;
-    private float scaleIncrement = 0.15f;   
+    public float scaleIncrement = 0.001f;   
     private GameManager gameManager;
-//ciao
+    private ParticleSystem particle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class Soap_script : MonoBehaviour
         }
         
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    
+        particle = GetComponent<ParticleSystem>();
 
     }
 
@@ -35,13 +36,17 @@ public class Soap_script : MonoBehaviour
         
     }
     
-    async void OnCollisionEnter(Collision other)
-    {
-        var particle = GetComponent<ParticleSystem>();
+    void OnCollisionEnter(Collision other)
+    { 
         if (other.gameObject.CompareTag("Man"))
         {
             particle.Play();
+        }
+    }
+    
 
+    void OnCollisionStay(Collision other)
+    {
             if (GameObject.Find("ProgressBar") != null)
             {
 
@@ -51,27 +56,26 @@ public class Soap_script : MonoBehaviour
                 if (progressBar.value.Equals(1))
                 {
                     Man_script.ChangeState(Man_script.States.washed);
-                    await Task.Delay(500);
+                    //await Task.Delay(500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
                     GameObject.Find("Hook").GetComponent<ObjectManipulator>().enabled = true;
                     gameManager.NextPanel(1);
+                    var particle = GetComponent<ParticleSystem>();
                     particle.Stop();
                 }
             }
-        }
-        else
-        {
-            particle.Stop();
-        }
-        
-    }
     }
 
 
-    private void OnCollisionExit(Collision other)
+    void OnCollisionExit(Collision other)
     {
-        
+        if (other.gameObject.CompareTag("Man"))
+            {
+                var particle = GetComponent<ParticleSystem>();
+                particle.Stop();
+            }
     }
     
 
+}
 }

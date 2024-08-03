@@ -9,6 +9,7 @@ public class Knife_script : MonoBehaviour
 {
     public  GameObject box1, box2;
     public GameObject humanOrgans;
+    public GameObject cut;
 
     public Material red;
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class Knife_script : MonoBehaviour
             GameObject.Find("Step3Cubes").SetActive(false);
             gameManager.NextPanel(5);
             GameManager.SetPositionTools(this.gameObject);
+            cut.SetActive(true);
         }
     
     }
