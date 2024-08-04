@@ -62,20 +62,21 @@ public class Soap_script : MonoBehaviour
                     gameManager.NextPanel(1);
                     var particle = GetComponent<ParticleSystem>();
                     particle.Stop();
+                    Man_script.ChangeMaterial("clean", GameObject.Find("body"));
                 }
             }
     }
 
 
-    void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.CompareTag("Man"))
+        void OnCollisionExit(Collision other)
+        {
+            if (other.gameObject.CompareTag("Man"))
             {
                 var particle = GetComponent<ParticleSystem>();
                 particle.Stop();
             }
-    }
+        }
     
 
-}
+    }
 }

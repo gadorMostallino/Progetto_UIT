@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1304008, g: 0.09601554, b: 0.06181498, a: 1}
+  m_IndirectSpecularColor: {r: 0.13040084, g: 0.09601555, b: 0.06181498, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8690002994913504760, guid: 7b2875e51c3000e439320e457fa4df44, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6596a2c4cec87a14a885db57d2d2f622, type: 2}
     - target: {fileID: -8679921383154817045, guid: 7b2875e51c3000e439320e457fa4df44, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1962333
@@ -182,6 +186,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7b2875e51c3000e439320e457fa4df44, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -245.052
+      objectReference: {fileID: 0}
+    - target: {fileID: -4749943076182266874, guid: 7b2875e51c3000e439320e457fa4df44, type: 3}
+      propertyPath: m_Name
+      value: body
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7b2875e51c3000e439320e457fa4df44, type: 3}
       propertyPath: m_Name
