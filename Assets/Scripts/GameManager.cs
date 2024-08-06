@@ -51,8 +51,8 @@ public class GameManager : MonoBehaviour
                 tool.GetComponent<ObjectManipulator>().enabled = false;
                 break;
             case "Hook":
-                tool.transform.localPosition = new Vector3((float)-1.4787426,(float)-1.49876511,(float)-1.551); 
-                tool.transform.rotation = Quaternion.Euler((float)-180, (float)0, (float)0);
+                tool.transform.localPosition = new Vector3((float)-2.03175163,(float)-0.35376513,(float)-1.58734977); 
+                tool.transform.rotation = Quaternion.Euler((float)358.156647, (float)241.814911, (float)67.0998001);
                 tool.GetComponent<ObjectManipulator>().enabled = false;
                 break;
             case "StoneKnife":
