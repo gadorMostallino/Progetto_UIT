@@ -20,7 +20,7 @@ public class CubeInteractions_script : MonoBehaviour
         
     }
     
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.Equals(cube))
         {
@@ -28,4 +28,6 @@ public class CubeInteractions_script : MonoBehaviour
         }
 
     }
+    
+    
 }

@@ -47,8 +47,15 @@ public class Mummy_script : MonoBehaviour
 
     async void SetPositionMummy()
     {
-        this.gameObject.transform.position = new Vector3((float)-1.71500003, (float)-0.233999997, (float)0.652999997);
-        this.gameObject.transform.rotation = Quaternion.Euler((float)275.230896, (float)173.820313, (float)310.322205);
+        //this.gameObject.transform.position = new Vector3((float)-1.71500003, (float)-0.233999997, (float)0.652999997);
+        //this.gameObject.transform.rotation = Quaternion.Euler((float)275.230896, (float)173.820313, (float)310.322205);
+        
+        //new position mummy2
+        this.gameObject.transform.position = new Vector3((float)-1.80999994, (float)0.0549999997, (float)-0.518000007);
+        //new rotation mummy2
+        this.gameObject.transform.rotation = Quaternion.Euler((float)275.230865, (float)229.651794, (float)310.322479);
+        
+        
         this.gameObject.GetComponent<ObjectManipulator>().enabled = false;
         GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         gameManager.NextPanel(10);
