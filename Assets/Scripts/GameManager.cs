@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     {
         if (XRrig != null)
         {
-            XRrig.transform.localPosition = salaImbalsamazione;
+            XRrig.transform.localPosition = initialPosition;
         }
         else
         {
