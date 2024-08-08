@@ -14,7 +14,8 @@ public class Mummy_script : MonoBehaviour
     void Start()
     {
         cubeInteractionsScript = GameObject.Find("CuboMummia1").GetComponent<CubeInteractions_script>();
-        
+        this.gameObject.GetComponent<ObjectManipulator>().enabled = false;
+
     }
 
     // Update is called once per frame

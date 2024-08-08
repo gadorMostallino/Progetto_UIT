@@ -29,7 +29,6 @@ public class Brain_script : MonoBehaviour
             this.transform.rotation = Quaternion.Euler((float)-180, (float)90, (float)0);
             Man_script.ChangeState(Man_script.States.brainExtraction);
             gameObject.GetComponent<ObjectManipulator>().enabled = false;
-            GameObject.Find("StoneKnife").GetComponent<ObjectManipulator>().enabled = true;
             GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             gameManager.NextPanel(3);
             

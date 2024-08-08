@@ -58,7 +58,6 @@ public class Soap_script : MonoBehaviour
                     Man_script.ChangeState(Man_script.States.washed);
                     //await Task.Delay(500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
-                    GameObject.Find("Hook").GetComponent<ObjectManipulator>().enabled = true;
                     gameManager.NextPanel(1);
                     var particle = GetComponent<ParticleSystem>();
                     particle.Stop();
