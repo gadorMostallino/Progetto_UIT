@@ -12,7 +12,7 @@ public class Soap_script : MonoBehaviour
 {
     public GameObject man;
     public UnityEngine.UI.Slider progressBar;
-    public float scaleIncrement = 0.001f;   
+    private float scaleIncrement = 0.006f;   
     private GameManager gameManager;
     private ParticleSystem particle;
 
@@ -55,6 +55,7 @@ public class Soap_script : MonoBehaviour
 
                 if (progressBar.value.Equals(1))
                 {
+                    man.GetComponent<AudioSource>().Play();
                     Man_script.ChangeState(Man_script.States.washed);
                     //await Task.Delay(500);
                     Destroy(GameObject.Find("CanvasProgressBar"));
