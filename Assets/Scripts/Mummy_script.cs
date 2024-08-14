@@ -9,12 +9,15 @@ public class Mummy_script : MonoBehaviour
 {
     private CubeInteractions_script cubeInteractionsScript;
     public GameObject sarcofago;
+    private TeleportationManager_script teleportationManager_script;
 
     // Start is called before the first frame update
     void Start()
     {
         cubeInteractionsScript = GameObject.Find("CuboMummia1").GetComponent<CubeInteractions_script>();
         this.gameObject.GetComponent<ObjectManipulator>().enabled = false;
+        
+        teleportationManager_script = this.gameObject.GetComponent<TeleportationManager_script>();
 
     }
 
@@ -65,5 +68,12 @@ public class Mummy_script : MonoBehaviour
         GameObject topSarcophagus = GameObject.Find("top"); 
         topSarcophagus.GetComponent<Animator>().Play("ClosingSarcophagus");
         topSarcophagus.GetComponent<AudioSource>().Play();
+        
+        Man_script.ChangeState(Man_script.States.sarcophagusClosed);
+        await Task.Delay(5000);
+        
+        //ultimo teletrasporto: scegliere tra Entrance() o FrontePiramide()
+        teleportationManager_script.Entrance();
+        
     }
 }

@@ -18,7 +18,11 @@ public class TeleportationManager_script : MonoBehaviour
         
     }
 
-
+    public void Entrance()
+    {
+        XRrig.transform.localPosition = new Vector3((float)0.384026587, 0, (float)-35.4000015);
+    }
+    
     // Teleportation function
     public void TeleportPlayer()
     {
@@ -28,6 +32,11 @@ public class TeleportationManager_script : MonoBehaviour
     public void IngressoSala()
     {
         XRrig.transform.localPosition = new Vector3((float)0.61, (float)0.2, (float)-0.032);
+    }
+
+    public void FrontePiramide()
+    {
+        XRrig.transform.localPosition = new Vector3((float)51.6599998, (float)3.5999999, (float)-33.6100006);
     }
 
 

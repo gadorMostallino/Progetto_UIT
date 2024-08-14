@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1304008, g: 0.09601554, b: 0.06181498, a: 1}
+  m_IndirectSpecularColor: {r: 0.13040084, g: 0.09601555, b: 0.06181498, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24320,6 +24320,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2471102458936864900, guid: ad5b753b73e311143a85055b15cea562, type: 3}
+      propertyPath: leftControllerSettings.simulationMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2471102458936864900, guid: ad5b753b73e311143a85055b15cea562, type: 3}
+      propertyPath: rightControllerSettings.simulationMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3493013819197874656, guid: ad5b753b73e311143a85055b15cea562, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -65321,6 +65329,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 16701e518557c694a89f17b42d308d3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1940290462}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 16701e518557c694a89f17b42d308d3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1940290463}
   m_SourcePrefab: {fileID: 100100000, guid: 16701e518557c694a89f17b42d308d3e, type: 3}
 --- !u!1 &1940290455 stripped
 GameObject:
@@ -65649,6 +65660,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sarcofago: {fileID: 5329482475499856977}
+--- !u!114 &1940290463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940290455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c2fa4c918c664b4c97ef2b04c36272b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1967739938
 GameObject:
   m_ObjectHideFlags: 0
@@ -67866,13 +67889,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5582419774952324152}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.012199251, y: -0.14654109, z: -0.98894143, w: -0.019281102}
-  m_LocalPosition: {x: -0.396, y: 0.256, z: 0.616}
+  m_LocalRotation: {x: -0.013961222, y: -0.052724894, z: -0.99834836, w: -0.018046254}
+  m_LocalPosition: {x: -0.396, y: 0.238, z: 0.611}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4809264682485874411}
-  m_LocalEulerAnglesHint: {x: -16.82, y: 1.783, z: -182.497}
+  m_LocalEulerAnglesHint: {x: -6.014, y: 1.716, z: -182.161}
 --- !u!54 &7879451056221426536
 Rigidbody:
   m_ObjectHideFlags: 0

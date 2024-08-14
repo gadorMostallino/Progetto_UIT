@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 public class Hook_script : MonoBehaviour
 {
     public GameObject brain;
-   
+
     // Start is called before the first frame update
     void Start()
     {

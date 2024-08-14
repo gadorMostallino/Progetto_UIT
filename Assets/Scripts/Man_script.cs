@@ -12,9 +12,9 @@ public class Man_script : MonoBehaviour
         brainExtraction,
         vasesClosed,
         bendageDone,
-        sarcophagusClosed,
-        end
+        sarcophagusClosed
     };
+    
     public static States currentState;
     public string state;
     
