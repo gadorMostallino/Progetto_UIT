@@ -5,6 +5,7 @@ using MixedReality.Toolkit.SpatialManipulation;
 using UnityEngine;
 using System.Threading.Tasks;
 
+
 public class Mummy_script : MonoBehaviour
 {
     private CubeInteractions_script cubeInteractionsScript;
@@ -73,7 +74,7 @@ public class Mummy_script : MonoBehaviour
         await Task.Delay(5000);
         
         //ultimo teletrasporto: scegliere tra Entrance() o FrontePiramide()
-        teleportationManager_script.Entrance();
+        //teleportationManager_script.Entrance();
         
     }
 }

@@ -67,4 +67,12 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+
+    public void ShutOff(){
+        //questa dovrebbe funzionare quando viene utilizzata la build, con l'editor non funziona
+        //Application.Quit();
+
+        //questa invece funziona solo da Editor
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
