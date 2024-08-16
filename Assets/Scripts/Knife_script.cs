@@ -34,6 +34,7 @@ public class Knife_script : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Box2"))
         {
+           
             humanOrgans.SetActive(true);
             GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             GameObject.Find("Step3Cubes").SetActive(false);
