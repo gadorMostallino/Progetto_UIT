@@ -24,6 +24,7 @@ public class Brain_script : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bucket"))
         {
+            this.GetComponent<AudioSource>().Play();
             //Fix position inside the bucket once the interaction is done and disable the object manipulator.
             this.transform.position = new Vector3((float)-0.801, (float)0.143999994, (float)1.78400004);
             this.transform.rotation = Quaternion.Euler((float)-180, (float)90, (float)0);
