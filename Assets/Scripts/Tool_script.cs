@@ -9,6 +9,7 @@ public class Hook_script : MonoBehaviour
 {
     public GameObject brain;
 
+    public GameObject blood;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class Hook_script : MonoBehaviour
         if (other.gameObject.CompareTag("Nose"))
         {
             brain.SetActive(true);
+            blood.SetActive(true);
         }
         
     }
