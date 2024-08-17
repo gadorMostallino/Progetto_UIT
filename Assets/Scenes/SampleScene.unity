@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1304008, g: 0.09601554, b: 0.06181498, a: 1}
+  m_IndirectSpecularColor: {r: 0.13040084, g: 0.09601555, b: 0.06181498, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3642,10 +3642,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 10
+    m_Top: 15
     m_Bottom: 1
   m_ChildAlignment: 1
-  m_Spacing: 0
+  m_Spacing: 1.96
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -31660,7 +31660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 111.41, y: -14.094999}
+  m_AnchoredPosition: {x: 111.41, y: -19.095}
   m_SizeDelta: {x: 211.3, y: 8.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1041657945
@@ -31767,7 +31767,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.027763354, y: 70.99847, z: -0.41459647, w: 20.102278}
+  m_margin: {x: -0.027763354, y: 70.99847, z: -0.41459647, w: 0.6}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
