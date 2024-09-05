@@ -37,7 +37,7 @@ public class TeleportationManager_script : MonoBehaviour
     public void FrontePiramide()
     {
         //XRrig.transform.localPosition = new Vector3((float)51.6599998, (float)3.5999999, (float)-33.6100006);
-        XRrig.transform.localPosition = new Vector3((float)-38.72256, (float)2.05, (float)-81.41453);
+        XRrig.transform.localPosition = new Vector3((float)-38.7225609, (float)3, (float)-81.4145279);
         XRrig.transform.localRotation = Quaternion.Euler((float)0, (float)-151.337, (float)0);
     }
 
